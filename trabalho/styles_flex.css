@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(243 , 243, 243);
+    color: #000;
+    min-height: 100dvh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px;
+}
+
+.header-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.header-group p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+main {
+    flex-grow: 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main img {
+    border-radius: 50%;
+    width: 340px;
+    height: 340px;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    max-width: 900px;
+}
+
+.main-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.main-group h1{
+    font-size: 64px;
+    font-family: "Work Sans", sans-serif;
+}
+
+.main-group p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+}
+
+footer {
+    flex-grow: 3;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 24px;
+    border-top: 1px solid #ccc;
+    margin: 0 64px;
+    padding-top: 32px;
+}
+
+.footer-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.footer-group p{
+    font-size: 18px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: bold;
+}
+.footer-copy{
+    font-size: 11px;
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style: none;
+}
+h2{
+    font-size: 22px;
+    font-family: "Work Sans", sans-serif;
+}
+
+@media (max-width: 768px) {
+    header {
+        justify-content: center;
+    }
+
+    .header-group {
+        display: none;
+    }
+
+    img {
+        width: 200px;
+    }
+
+    .main-container {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-grow: 1;
+    }
+
+    .footer-container {
+        margin: 0 32px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main-group {
+        text-align: center;
+        padding: 0 16px;
+    }
+}
